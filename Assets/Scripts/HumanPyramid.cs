@@ -18,9 +18,9 @@ public class HumanPyramid : MonoBehaviour
     [HideInInspector] public Vector3 centerPosition;
     [HideInInspector] public int totalBottomElementCount;
 
-    public List<Pyramid> humanPyramid = new List<Pyramid>();
+    [HideInInspector] public List<Pyramid> humanPyramid = new List<Pyramid>();
     private TouchControl touchControl = new TouchControl();
-    [SerializeField] private List<Human> humansInThePyramid = new List<Human>();
+    private List<Human> humansInThePyramid = new List<Human>();
 
     public void InitializePyramid()
     {
